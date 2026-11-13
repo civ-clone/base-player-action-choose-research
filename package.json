@@ -1,0 +1,35 @@
+{
+  "name": "@civ-clone/base-player-action-choose-research",
+  "version": "0.1.0",
+  "description": "The ChooseResearch player action: while the player is researching nothing, they must choose what to research before the turn can end.",
+  "repository": "git@github.com:civ-clone/base-player-action-choose-research.git",
+  "keywords": [
+    "typescript",
+    "civilization"
+  ],
+  "author": "dom111 <dom111@users.noreply.github.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "npm run ts:compile && npm run prettier:format",
+    "prettier:check": "prettier --config .prettierrc --check '**/*.ts'",
+    "prettier:format": "prettier --config .prettierrc '**/*.ts' --write",
+    "test": "ts-mocha ./tests/*.test.ts",
+    "ts:compile": "tsc --build tsconfig.json"
+  },
+  "devDependencies": {
+    "@civ-clone/core-rule": "^0.1.9",
+    "@civ-clone/core-science": "^0.1.9",
+    "@types/chai": "^4.0.0",
+    "@types/mocha": "^10.0.0",
+    "@types/node": "^16.0.0",
+    "chai": "^4.0.0",
+    "mocha": "^10.0.0",
+    "prettier": "^2.8.8",
+    "ts-mocha": "^10.0.0",
+    "typescript": "^4.0.0"
+  },
+  "dependencies": {
+    "@civ-clone/core-player": "^0.1.10"
+  }
+}
